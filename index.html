@@ -32,12 +32,12 @@
     scrollWheelZoom: false
   });
 
-  /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
+  /* display basemap tiles -- see others at https://www.openstreetmap.org/copyrigh */
   L.tileLayer(
-    ''https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'">\
-        OpenStreetMap</a> contributors, &copy;\
-        <a href="https://carto.com/attribution">CARTO</a>'
+    'https://tile.openstreetmap.org/{z}/{x}/{y}.png' , {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">\
+        OpenStreetMap</a> contributors', &copy;\
+        <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
