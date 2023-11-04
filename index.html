@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="Lily's Map">EDIT map title</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,23 +27,28 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [41.6032° N, 73.0877° W], // EDIT coordinates to re-center map
+    zoom: 18,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://osm.org/copyright">\
+    ''https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'">\
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
-
+  L.marker([41.74776434872526, -72.69045889613916]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Trinity College"); // EDIT pop-up text message
+     /* Display a point marker with pop-up text */
+  L.marker([41.5569642044764, -72.65620539314143]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Weslyan University"); // EDIT pop-up text message
+ /* Display a point marker with pop-up text */
+  L.marker([41.379941928393905, -72.10433217499313]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Connecticut College"); // EDIT pop-up text message
   </script>
 </body>
 </html>
